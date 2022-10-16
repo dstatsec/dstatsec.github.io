@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+    
+<head>
+
+        <!-- META DATA -->
+        <meta charset="UTF-8">
+        <title>DSTAT | Graph</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="RootSec">
+        <!-- BOOTSTRAP CSS -->
+        <link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- STYLE CSS -->
+        <link href="../assets/css/style.css" rel="stylesheet" />
+        <link href="../assets/css/plugins.css" rel="stylesheet" />
+
+        <!--- FONT-ICONS CSS -->
+        <link href="../assets/css/icons.css" rel="stylesheet" />
+
+    </head>
+
+    <body class="app ltr sidebar-gone dark-mode horizontal-hover horizontal">
+
+        
+
+        <!-- GLOBAL-LOADER -->
+        <div id="global-loader">
+            <img src="../assets/images/loader.svg" class="loader-img" alt="Loader">
+        </div>
+        <!-- /GLOBAL-LOADER -->
+
+        <!-- PAGE -->
+        <div class="page">
+            <div class="page-main">
+
+                <!-- app-Header -->
+                <div class="app-header header sticky">
+                    <div class="container-fluid main-container">
+                        <div class="d-flex align-items-center">
+                            <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href="javascript:void(0);"></a>
+                            <div class="responsive-logo">
+                                <a href="/" class="header-logo">
+                                    <img src="../assets/images/brand/logo-3.png" class="mobile-logo logo-1" alt="logo">
+                                    <img src="../assets/images/brand/logo.png" class="mobile-logo dark-logo-1" alt="logo">
+                                </a>
+                            </div>
+                            <!-- sidebar-toggle-->
+                            <a class="logo-horizontal " href="/">
+                                <img src="../assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
+                                <img src="../assets/images/brand/logo-3.png" class="header-brand-img light-logo1"
+                                    alt="logo">
+                            </a>
+
+                    </div>
+                </div>
+                <!-- /app-Header -->
+
+                <!--APP-SIDEBAR-->
+                <div class="sticky">
+                    <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
+                    <aside class="app-sidebar">
+                        <div class="side-header">
+                            <a class="header-brand1" href="/">
+                                <img src="../assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
+                                <img src="../assets/images/brand/logo-1.png" class="header-brand-img toggle-logo" alt="logo">
+                                <img src="../assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
+                                <img src="../assets/images/brand/logo-3.png" class="header-brand-img light-logo1" alt="logo">
+                            </a>
+                            <!-- LOGO -->
+                        </div>
+                        <div class="main-sidemenu">
+                                 <ul class="side-menu">
+                                    <li class="slide"><a class="side-menu__item " data-bs-toggle="slide" href="/"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Home</span></a></li>
+                                    <li class="slide"><a class="side-menu__item " data-bs-toggle="slide" href="https://github.com/R00tS3c/DDOS-RootSec/"><i class="side-menu__icon fe fe-package"></i><span class="side-menu__label">Archive</span></a></li>
+                                    <li class="slide">
+                                        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-server"></i><span class="side-menu__label">Layer4</span><i class="angle fa fa-angle-right"></i></a>
+                                        <ul id="l4-srvlist" class="slide-menu">
+                                        </ul>
+                                    </li>
+                                    <li class="slide">
+                                        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-server"></i><span class="side-menu__label">Layer7</span><i class="angle fa fa-angle-right"></i></a>
+                                        <ul id="l7-srvlist" class="slide-menu">                            
+                                        </ul>
+                                    </li>
+                                    <li class="slide">
+                                        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-cloud-lightning"></i><span class="side-menu__label">Web tools</span><i class="angle fa fa-angle-right"></i></a>
+                                        <ul id="webtools" class="slide-menu">
+                                        </ul>
+                                    </li>
+                                    <li class="slide">
+                                        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-settings"></i><span class="side-menu__label">Other tools</span><i class="angle fa fa-angle-right"></i></a>
+                                        <ul id="othertools" class="slide-menu">
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </div>
+                    </aside>
+                </div>
+                <!--/APP-SIDEBAR-->
+
+                <!--app-content open-->
+                <div class="main-content app-content mt-0">
+                    <div class="side-app">
+
+                        <!-- CONTAINER -->
+                        <div class="main-container container-fluid">
+
+                            <!-- PAGE-HEADER -->
+                            <div class="page-header">
+                                <div>
+                                    <h1 class="page-title">DSTAT</h1>
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item active" aria-current="page">Welcome to DSTAT</li>
+                                    </ol>
+                                </div>
+                               <!-- <div class="ms-auto pageheader-btn">
+                                    <a href="javascript:void(0);" class="btn btn-primary btn-icon text-white me-2">
+                                        <span>
+                                                <i class="fe fe-plus"></i>
+                                            </span> Add Account
+                                    </a>
+                                    <a href="javascript:void(0);" class="btn btn-success btn-icon text-white">
+                                        <span>
+                                                <i class="fe fe-log-in"></i>
+                                            </span> Export
+                                    </a>
+                                </div> -->
+                            </div>
+                            <!-- PAGE-HEADER END -->
+                            <div class="col-xl-12">
+                                <div class="row" id="top-banners">
+                                </div>
+                            </div>
+                            <!-- ROW-1 -->
+                <div class="row">
+                    <div class="col-xl-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Graph info</h4>
+                            <div class="about" wfd-id="62">
+                              <h5>Name</h5>
+                              <p id="server-name1"></p>
+                            </div>
+                            <div id="ip-field"class="about" wfd-id="62">
+                              <h5>IP Address</h5>
+                                 <p id="server-ip"></p>
+                                 <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('server-ip').innerHTML)" class="btn btn-sm btn-primary w-sm">Copy</button>
+                            </div>
+                            <br>
+                            <div class="about" wfd-id="62">
+                              <h5>Location</h5>
+                              <p id="server-location"></p>
+                            </div>
+                            <div class="about" wfd-id="">
+                              <h5>Layer</h5>
+                              <p id="server-type"></p>
+                            </div>
+                            <div class="about" wfd-id="">
+                                <h5>Server status</h5>
+                                <p id="server-status"></p>
+                            </div>
+                            <div class="about" wfd-id="">
+                                <h5>Server Info</h5>
+                                <p id="server-req"></p>
+                                <p id="server-pps"></p>
+                            </div>
+                        </div>
+                        <!-- end card body -->
+                    </div>
+                    <!-- end card -->
+                </div>
+                
+                <div class="col-xl-9">
+                    <div class="card">
+                        <div class="card-body" style="height:1200px;">
+                            <h4 class="card-title mb-4" id="server-name2"></h4>
+                            <center>
+                                <div style="display: inline-flex;">
+                                    <div id="cpu"></div>
+                                    <div id="ram"></div>
+                                    </div>
+                            <div id="graph" width="95%" height="600px"></div>
+                            <div id="graph2" width="95%" height="600px"></div>
+                            </center>
+                        </div>
+                        <!-- end card body -->
+                    </div>
+                    <!-- end card -->
+                </div>
+<div class="col-xl-12">
+    <div class="row" id="down-banners">
+      
+    </div>
+</div>
+</div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- end main content-->
+
+        </div>
+                        </div>
+                    
+                    </div>
+                    
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row align-items-center flex-row-reverse">
+                        <div class="col-md-12 col-sm-12 text-center">
+                            Copyright © <span id="year"></span> <a href="javascript:void(0);">RootSec</a>. All rights reserved
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- FOOTER END -->
+        </div>
+
+        <!-- BACK-TO-TOP -->
+        <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+        <!-- JQUERY JS -->
+        <script src="../assets/js/jquery.min.js"></script>
+
+        <!-- BOOTSTRAP JS -->
+        <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+        <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- SPARKLINE JS-->
+        <script src="../assets/js/jquery.sparkline.min.js"></script>
+
+        <!-- CHART-CIRCLE JS-->
+        <script src="../assets/js/circle-progress.min.js"></script>
+
+        <!-- CHARTJS CHART JS-->
+        <script src="../assets/plugins/chart/Chart.bundle.js"></script>
+        <script src="../assets/plugins/chart/utils.js"></script>
+
+        <!-- PIETY CHART JS-->
+        <script src="../assets/plugins/peitychart/jquery.peity.min.js"></script>
+        <script src="../assets/plugins/peitychart/peitychart.init.js"></script>
+
+        <!-- INTERNAL SELECT2 JS -->
+        <script src="../assets/plugins/select2/select2.full.min.js"></script>
+
+        <!-- INTERNAL Data tables js-->
+        <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+        <script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+        <script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
+
+        <!-- ECHART JS-->
+        <script src="../assets/plugins/echarts/echarts.js"></script>
+
+        <!-- SIDE-MENU JS-->
+        <script src="../assets/plugins/sidemenu/sidemenu.js"></script>
+
+        <!-- Sticky js -->
+        <script src="../assets/js/sticky.js"></script>
+
+        <!-- SIDEBAR JS -->
+        <script src="../assets/plugins/sidebar/sidebar.js"></script>
+
+        <!-- Perfect SCROLLBAR JS-->
+        <script src="../assets/plugins/p-scroll/perfect-scrollbar.js"></script>
+        <script src="../assets/plugins/p-scroll/pscroll.js"></script>
+        <script src="../assets/plugins/p-scroll/pscroll-1.js"></script>
+
+        <!-- APEXCHART JS -->
+        <script src="../assets/js/apexcharts.js"></script>
+
+        <!-- INDEX JS -->
+        <script src="../assets/js/index1.js"></script>
+
+        <!-- Color Theme js -->
+        <script src="../assets/js/themeColors.js"></script>
+
+        <!-- swither styles js -->
+        <script src="../assets/js/swither-styles.js"></script>
+
+        <!-- CUSTOM JS -->
+        <script src="../assets/js/custom.js"></script>
+        <script src="../assets/js/menu.js"></script>
+        <script src="../assets/js/highcharts.js"></script>
+        <script src="../assets/js/exporting.js"></script>
+
+        <script src="../assets/js/graph.js"></script>
+
+        <!-- Switcher js -->
+        <script src="../assets/switcher/js/switcher.js"></script>
+
+    </body>
+
+</html>
