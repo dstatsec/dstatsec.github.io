@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<!-- META DATA -->
+		<meta charset="UTF-8">
+		<title>DSTAT | Stressers / Booters</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="author" content="RootSec">
+		<!-- BOOTSTRAP CSS -->
+		<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<!-- STYLE CSS -->
+		<link href="../assets/css/style.css" rel="stylesheet" />
+		<link href="../assets/css/scrollbar.css" rel="stylesheet" />
+		<link href="../assets/css/plugins.css" rel="stylesheet" />
+		<!--- FONT-ICONS CSS -->
+		<link href="../assets/css/icons.css" rel="stylesheet" />
+	</head>
+	<body class="app ltr sidebar-gone dark-mode horizontal-hover horizontal">
+		<!-- GLOBAL-LOADER -->
+		<div id="global-loader">
+			<img src="../assets/images/loader.svg" class="loader-img" alt="Loader">
+		</div>
+		<!-- /GLOBAL-LOADER -->
+		<!-- PAGE -->
+		<div class="page">
+			<div class="page-main">
+				<!-- app-Header -->
+				<div class="app-header header sticky">
+					<div class="container-fluid main-container">
+						<div class="d-flex align-items-center">
+							<a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href="javascript:void(0);"></a>
+							<div class="responsive-logo">
+								<a href="/" class="header-logo">
+									<img src="../assets/images/brand/logo-3.png" class="mobile-logo logo-1" alt="logo">
+									<img src="../assets/images/brand/logo.png" class="mobile-logo dark-logo-1" alt="logo">
+								</a>
+							</div>
+							<!-- sidebar-toggle-->
+							<a class="logo-horizontal " href="/">
+								<img src="../assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
+								<img src="../assets/images/brand/logo-3.png" class="header-brand-img light-logo1"
+									alt="logo">
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /app-Header -->
+				<!--APP-SIDEBAR-->
+				<div class="sticky">
+					<div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
+					<aside class="app-sidebar">
+						<div class="side-header">
+							<a class="header-brand1" href="/">
+								<img src="../assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
+								<img src="../assets/images/brand/logo-1.png" class="header-brand-img toggle-logo" alt="logo">
+								<img src="../assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
+								<img src="../assets/images/brand/logo-3.png" class="header-brand-img light-logo1" alt="logo">
+							</a>
+							<!-- LOGO -->
+						</div>
+						<div class="main-sidemenu">
+							<ul class="side-menu">
+								<li class="slide"><a class="side-menu__item " data-bs-toggle="slide" href="/"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Home</span></a></li>
+								<li class="slide"><a class="side-menu__item " data-bs-toggle="slide" href="https://github.com/R00tS3c/DDOS-RootSec/"><i class="side-menu__icon fe fe-package"></i><span class="side-menu__label">Archive</span></a></li>
+								<li class="slide"><a class="side-menu__item " data-bs-toggle="slide" href="/reviews"><i class="side-menu__icon fe fe-shield"></i><span class="side-menu__label">Stressers</span></a></li>
+								<li class="slide"><a class="side-menu__item " data-bs-toggle="slide" href="/hosts"><i class="side-menu__icon fe fe-cpu"></i><span class="side-menu__label">Hostings</span></a></li>
+								<li class="slide">
+									<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-server"></i><span class="side-menu__label">Layer4</span><i class="angle fa fa-angle-right"></i></a>
+									<ul id="l4-srvlist" style="max-height: 300px;overflow-y: auto;" class="slide-menu">
+									</ul>
+								</li>
+								<li class="slide">
+									<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-server"></i><span class="side-menu__label">Layer7</span><i class="angle fa fa-angle-right"></i></a>
+									<ul id="l7-srvlist" style="max-height: 300px;overflow-y: auto;" class="slide-menu">                            
+									</ul>
+								</li>
+								<li class="slide">
+									<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-cloud-lightning"></i><span class="side-menu__label">Web tools</span><i class="angle fa fa-angle-right"></i></a>
+									<ul id="webtools" style="max-height: 300px;overflow-y: auto;" class="slide-menu">
+									</ul>
+								</li>
+								<li class="slide">
+									<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-settings"></i><span class="side-menu__label">Other tools</span><i class="angle fa fa-angle-right"></i></a>
+									<ul id="othertools" style="max-height: 300px;overflow-y: auto;" class="slide-menu">
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</aside>
+				</div>
+				<!--/APP-SIDEBAR-->
+				<!--app-content open-->
+				<div class="main-content app-content mt-0">
+					<div class="side-app">
+						<!-- CONTAINER -->
+						<div class="main-container container-fluid">
+							<!-- PAGE-HEADER -->
+							<div class="page-header">
+								<div>
+									<h1 class="page-title">DSTAT</h1>
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item active" aria-current="page">Welcome to DSTAT</li>
+									</ol>
+								</div>							  
+							</div>
+							<!-- PAGE-HEADER END -->
+							<div class="col-xl-12">
+								<div class="row" id="top-d">
+								</div>
+							</div>
+							<!-- ROW-1 -->
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"></script>
+							<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css">
+							<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.themes.min.css">
+							
+							<div class="row">
+							   <div class="col-9">
+								  <div class="card">
+									 <div class="card-body">
+										<p class="section-filters-bar-title">
+										<div class="table-rep-plugin">
+										   <div class="table-wrapper">
+<!---											  <div class="btn-toolbar" style="height:60px;">
+												   <div class="btn-group dropdown-btn-group pull-right">
+													<button type="button" style="height:45px;width:100px;padding:10px;font-weight:bold;" data-bs-toggle="modal" data-bs-target="#submitsite" class="btn btn-primary">SUBMIT</button>
+												   </div>
+											  </div> --->
+											  <div class="table-responsive mb-0 fixed-solution" data-pattern="priority-columns">
+												 <div  style=" width: auto; top: -1px;">
+													<table id="tech-companies-1-clone" class="table table-striped">
+													   <thead>
+														  <tr style="background: #6259ca;">
+															 <th id="tech-companies-1-col-0-clone">Name</th>
+															 <th data-priority="1" id="tech-companies-1-col-1-clone">Website link</th>
+															 <th data-priority="3" id="tech-companies-1-col-2-clone">Description</th>
+															 <th data-priority="1" id="tech-companies-1-col-3-clone">Owner</th>
+															 <th data-priority="3" id="tech-companies-1-col-4-clone" style="white-space: nowrap;color: yellow;">Free plan</th>
+															 <th data-priority="3" id="tech-companies-1-col-5-clone">Layer3/4</th>
+															 <th data-priority="6" id="tech-companies-1-col-6-clone">Layer7</th>
+															 <th data-priority="6" id="tech-companies-1-col-7-clone">Logging<font color="yellow">*</font></th>
+															 <th data-priority="6" id="tech-companies-1-col-8-clone">APIs</th>
+															 <th data-priority="6" id="tech-companies-1-col-8-clone">Payment methods</th>
+															 <th data-priority="6" id="tech-companies-1-col-8-clone">Status</th>
+															 <th data-priority="6" id="tech-companies-1-col-8-clone">Last change</th>
+															 <th data-priority="6" id="tech-companies-1-col-8-clone"></th>
+														  </tr>
+													   </thead>
+													   <tbody id="list-rev">
+													   </tbody>
+													</table>
+												 </div>
+											  </div>
+										   </div>
+										</div>
+									 </div>
+								  </div>
+							   </div>
+							   <!-- end col -->
+								<div class="col-xl-3">
+									<div class="card">
+										<div class="card-body">
+											<div class="widget-box-content" style="margin-top:6px;">
+												<p class="paragraph">DSTAT collects information on public stress test platforms to determine the functions provided by each of them, we publish these informations in our table so that you can see their functionalities clearly and transparently.<br>
+												All the listed sites should be used ONLY to test the resilience of your network or web applications.<br>
+												Our site is not affiliated with any of the listed websites, our site take no responsibility from illegal or unethical usage.
+												</p>
+												<div class="information-line-list">
+												<div class="information-line">
+												<p class="information-line-title">Total sites</p>
+												<p class="information-line-text" id="total-sites">
+												</p>
+												</div>
+												<div class="information-line" style="display: unset;">
+												<p class="information-line-title" style="width: unset;">Status Legenda</p>
+												<p class="information-line-text">
+												🔥 <b>Hot</b> - This site is on fire! Check it out.<br>
+												⭐ <b>Premium</b> - Premium trusted site.<br>
+												✅ <b>Vouched</b> - Site checked over time, reliable and vouched.<br>
+												☑️ <b>Verified</b> - Checked site, working as expected.<br>
+												⌛ <b>Pending</b> - Site pending verification due to missing information from the owner.<br>
+												❓ <b>Unverified</b> - Known unverified site, deal with caution.<br>
+												❗ <b>Risky</b> - Recently open unknown site, deal with <u>extreme</u> caution.<br>
+												⚰️ <b>Closed</b> - Closed site, offline.<br>
+												☣️ <b>Scammer</b> - Scammer site, dont deal with.
+												</p>
+												</div>
+												</div>
+												</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-12">
+								<div class="row" id="down-d"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row align-items-center flex-row-reverse">
+					<div class="col-md-12 col-sm-12 text-center">
+						Copyright © <span id="year"></span> <a href="javascript:void(0);">RootSec</a>. All rights reserved
+					</div>
+				</div>
+			</div>
+		</footer>			
+		<!-- BACK-TO-TOP -->
+		<a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+		<!-- JQUERY JS -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/highcharts.js"></script>
+		<script src="../assets/js/exporting.js"></script>
+		<!-- BOOTSTRAP JS -->
+		<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+		<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../assets/plugins/select2/select2.full.min.js"></script>
+		<!-- Sticky js -->
+		<script src="../assets/js/sticky.js"></script>
+		<script src="../assets/plugins/sidemenu/sidemenu.js"></script>
+		<!-- APEXCHART JS -->
+		<script src="../assets/js/apexcharts.js"></script>
+		<script src="../assets/js/swither-styles.js"></script>
+		<script src="../assets/js/themeColors.js"></script>
+		<!-- CUSTOM JS -->
+		<script src="../assets/js/custom.js"></script>
+		<script src="../assets/js/menu.js"></script>
+		<script src="../assets/js/reviews.js"></script>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZL517TCJH"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-ZZL517TCJH');
+		</script>	
+	</body>
+</html>
