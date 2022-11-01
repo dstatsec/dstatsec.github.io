@@ -1,6 +1,6 @@
 "use strict";var CheckHost=(function(){function API(args){if(args===undefined)
 args={}
-this.api_uri=args["apiUri"]||"https://cors-proxy.htmldriven.com/?url=https://check-host.net";this.resultInterval=2000;this.resultWaitTime=60;}
+this.api_uri=args["apiUri"]||"https://thingproxy.freeboard.io/fetch/https://check-host.net";this.resultInterval=2000;this.resultWaitTime=60;}
 API.prototype.check=function(args){if(args["host"]==null)
 throw("Missing host");if(args["type"]==null)
 throw("Missing type");var host=args["host"];var type=args["type"];var checkArgs=args["options"];if(checkArgs==null)
