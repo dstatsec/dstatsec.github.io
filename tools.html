@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<!-- META DATA -->
+		<meta charset="UTF-8">
+		<title>DSTAT | Tools</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="author" content="RootSec">
+		<!-- BOOTSTRAP CSS -->
+		<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<!-- STYLE CSS -->
+		<link href="../assets/css/style.css" rel="stylesheet" />
+		<link href="../assets/css/scrollbar.css" rel="stylesheet" />
+		<link href="../assets/css/plugins.css" rel="stylesheet" />
+		<!--- FONT-ICONS CSS -->
+		<link href="../assets/css/icons.css" rel="stylesheet" />
+		<script src="https://check-host.net/js/checkhost-api.js"></script>
+		<link rel="stylesheet" type="text/css" href="../assets/css/checkhost.css"/>
+	</head>
+	<body class="app ltr sidebar-gone dark-mode horizontal-hover horizontal">
+		<!-- GLOBAL-LOADER -->
+		<div id="global-loader">
+			<img src="../assets/images/loader.svg" class="loader-img" alt="Loader">
+		</div>
+		<!-- /GLOBAL-LOADER -->
+		<!-- PAGE -->
+		<div class="page">
+			<div class="page-main">
+				<!-- app-Header -->
+				<div class="app-header header sticky">
+					<div class="container-fluid main-container">
+						<div class="d-flex align-items-center">
+							<a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href="javascript:void(0);"></a>
+							<div class="responsive-logo">
+								<a href="/" class="header-logo">
+									<img src="../assets/images/brand/logo-3.png" class="mobile-logo logo-1" alt="logo">
+									<img src="../assets/images/brand/logo.png" class="mobile-logo dark-logo-1" alt="logo">
+								</a>
+							</div>
+							<!-- sidebar-toggle-->
+							<a class="logo-horizontal " href="/">
+								<img src="../assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
+								<img src="../assets/images/brand/logo-3.png" class="header-brand-img light-logo1"
+									alt="logo">
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /app-Header -->
+				<!--APP-SIDEBAR-->
+				<div class="sticky">
+					<div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
+					<aside class="app-sidebar">
+						<div class="side-header">
+							<a class="header-brand1" href="/">
+								<img src="../assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
+								<img src="../assets/images/brand/logo-1.png" class="header-brand-img toggle-logo" alt="logo">
+								<img src="../assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
+								<img src="../assets/images/brand/logo-3.png" class="header-brand-img light-logo1" alt="logo">
+							</a>
+							<!-- LOGO -->
+						</div>
+						<div class="main-sidemenu">
+							<ul class="side-menu">
+								<li class="slide"><a class="side-menu__item " data-bs-toggle="slide" href="/"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Home</span></a></li>
+								<li class="slide"><a class="side-menu__item " data-bs-toggle="slide" href="https://github.com/R00tS3c/DDOS-RootSec/"><i class="side-menu__icon fe fe-package"></i><span class="side-menu__label">Archive</span></a></li>
+								<li class="slide"><a class="side-menu__item " data-bs-toggle="slide" href="/reviews"><i class="side-menu__icon fe fe-shield"></i><span class="side-menu__label">Stressers</span></a></li>
+								<li class="slide">
+									<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-server"></i><span class="side-menu__label">Layer4</span><i class="angle fa fa-angle-right"></i></a>
+									<ul id="l4-srvlist" style="max-height: 300px;overflow-y: auto;" class="slide-menu">
+									</ul>
+								</li>
+								<li class="slide">
+									<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-server"></i><span class="side-menu__label">Layer7</span><i class="angle fa fa-angle-right"></i></a>
+									<ul id="l7-srvlist" style="max-height: 300px;overflow-y: auto;" class="slide-menu">                            
+									</ul>
+								</li>
+								<li class="slide">
+									<a class="side-menu__item" data-bs-toggle="slide" href="/tools"><i class="side-menu__icon fe fe-cloud-lightning"></i><span class="side-menu__label">Tools</span></a>
+								</li>
+							</ul>
+						</div>
+					</aside>
+				</div>
+				<!--/APP-SIDEBAR-->
+				<!--app-content open-->
+				<div class="main-content app-content mt-0">
+					<div class="side-app">
+						<!-- CONTAINER -->
+						<div class="main-container container-fluid">
+							<!-- PAGE-HEADER -->
+							<div class="page-header">
+								<div>
+									<h1 class="page-title">DSTAT</h1>
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item active" aria-current="page">Welcome to DSTAT</li>
+									</ol>
+								</div>							  
+							</div>
+							<!-- PAGE-HEADER END -->
+							<div class="col-xl-12">
+								<div class="row" id="top-d">
+								</div>
+							</div>
+							<!-- ROW-1 -->
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"></script>
+							<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css">
+							<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.themes.min.css">
+							
+							<div class="row" id="tools">
+							   <div class="col-6">
+								  <div id="add-fields" class="card">
+									 <div class="card-body">
+										<p id="tool-name"></p>
+										<div class="form-group">
+											<label class="form-label mt-0">Select a tool</label>
+											<select id="tools-menu" class="form-control form-select select2">
+												<option value="0">Select</option>
+												<option value="1">Bitcoin accelerator</option>
+												<option value="2">Domain resolver</option>
+												<option value="3">CIDR to IPv4 Range</option>
+												<option value="4">Proxy lists</option>
+												<option value="5">Check Host</option>
+											</select>
+										</div>
+										<br>
+										<div style="display: none;" id="additional">
+										<label id="enter" class="form-label mt-0"></label>
+										<input type="text" id="value" class="form-control">
+										<br>
+										<div id="check-fields" style="display: none;" class="form-group">
+											<select id="check" class="form-control form-select select2">
+												<option value="0">Select check type</option>
+												<option name="ping" value="ping">PING</option>
+												<option name="http" value="http">HTTP</option>
+												<option name="tcp" value="tcp">TCP</option>
+												<option name="udp" value="udp">UDP</option>
+												<option name="dns" value="dns">DNS</option>
+											</select>
+										</div>
+										<br><a id="submit"  class="btn btn-primary d-grid mt-5">Submit</a>
+										</div>
+									 </div>
+								  </div>
+							   </div>
+							   <!-- end col -->
+							</div>
+							<div class="col-xl-12">
+								<div class="row" id="down-d"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row align-items-center flex-row-reverse">
+					<div class="col-md-12 col-sm-12 text-center">
+						Copyright © <span id="year"></span> <a href="javascript:void(0);">RootSec</a>. All rights reserved
+					</div>
+				</div>
+			</div>
+		</footer>			
+		<!-- BACK-TO-TOP -->
+		<style>
+		textarea {
+        overflow-y: scroll;
+        height: 400px;
+        resize: none;
+		background: #30304d;
+    	width: 100%;
+		color: #fff;
+		padding: 20px;
+   		}
+		</style>
+		<a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+		<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../assets/plugins/select2/select2.full.min.js"></script>
+		<!-- Sticky js -->
+		<script src="../assets/js/sticky.js"></script>
+		<script src="../assets/plugins/sidemenu/sidemenu.js"></script>
+		<!-- APEXCHART JS -->
+		<script src="../assets/js/apexcharts.js"></script>
+		<script src="../assets/js/swither-styles.js"></script>
+		<script src="../assets/js/themeColors.js"></script>
+		<!-- CUSTOM JS -->
+		<script src="../assets/js/custom.js"></script>
+		<script src="../assets/js/menu.js"></script>
+		<script src="../assets/js/tools.js"></script>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZL517TCJH"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-ZZL517TCJH');
+		</script>	
+	</body>
+</html>
